@@ -12,7 +12,7 @@
 
 #contact-modal {
 	outline: none;
-	color: #222;
+	color: #fff;
 	overflow: visible;
 	position: fixed;
 	left: 0;
@@ -23,9 +23,19 @@
 	height: 80vh;
 	min-width: 100%;
 	box-shadow: rgba(0, 0, 0, 0.30) 0 5px 20px;
-	padding: $step-6;
 	margin: 0;
-	background-color: #eee;
+	background-color: #000;
+}
+#contact-modal .background {
+    background: #fd01e9;
+    background: linear-gradient(197deg,rgba(253,1,233,.6),rgba(185,2,253,.65) 20%,rgba(108,0,239,.6) 40%,rgba(108,0,239,.35) 60%,rgba(15,16,35,.23) 80%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+	padding: $step-6;
 }
 
 #contact-close-button {
@@ -51,7 +61,7 @@
 
 // Contact heading section
 .contact-heading-title {
-	font-family: "Have Heart One", sans-serif;
+	font-family: 'Cinzel Decorative', cursive;
 	text-transform: none;
 	font-weight: 400;
 	margin-bottom: 1rem;
@@ -59,7 +69,8 @@
 
 .contact-heading-subtext {
 	padding-top: 40px;
-	color: #666666;
+	color: #fff;
+	font-size: $step-1;
 }
 
 // Form section
@@ -71,8 +82,9 @@
 	font-size: $step-0;
 	width: 100%;
 	padding: 0.7rem;
-	border: 1px solid #666;
+	border: 1px solid #fff;
 	background: none;
+	color: #fff;
 }
 
 .input:nth-child(-n+3) {
@@ -80,6 +92,7 @@
 }
 ::placeholder {
 	font-family: $font-family-main;
+	color: #fff;
   }
 .text-area {
 	resize: none;
@@ -87,14 +100,15 @@
 }
 
 .form-submit-btn {
-	background: #474747;
+	background: transparent;
 	color: #eee;
 	transition: 0.3s;
 	cursor: pointer;
 	border: none;
-	padding: 0.7rem;
+	padding: 10px 30px;
 	align-self: end;
 	text-transform: uppercase;
+	border: 1px solid #ffffff;;
 }
 .overflow{
 	overflow: auto;
@@ -103,11 +117,12 @@
 .mailer{
 	text-decoration: underline;
 	text-underline-offset: 8px;
-	text-decoration-color: aqua;
+	text-decoration-color: rgb(218, 7, 218);
 }
 
 .form-submit-btn:hover {
-	background: #171717;
+	background: #fff;
+	color: #000;
 }
 
 // Contact info section
@@ -120,22 +135,23 @@
 }
 
 .contact-info-label {
-	color: #666;
+	color: #fff;
 	font-size: $step-0;
 }
 
 .contact-info-detail * {
 	cursor: pointer;
-	color: #222;
+	color: #fff;
+	font-size: $step-1;
 }
 
 .contact-social-icons:nth-child(n+1) {
-	margin: 0 20px 0 0;
+	margin: 10px 30px 0 0;
 }
 
 .contact-social-icons {
-	width: 24px;
-	height: 24px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 }
 

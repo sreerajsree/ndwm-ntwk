@@ -11,24 +11,42 @@
 }
 
 .lets-meet {
-	font-family: "Have Heart One", serif;
-	font-size: $step-8;
+	font-family: $font-family-cinzel;
+	font-size: $step-4;
 }
 
-.footer-main{
-	padding-top : 30px;
+.footer-main {
+	padding-top: 30px;
+}
+
+hr {
+	position: relative;
 }
 
 .footer-main hr {
 	border: none;
 	height: 1px;
 	width: 600px;
+	border: 0;
+	height: 1px;
 	margin: auto;
-	background-color: $black;
-	opacity: 0.1;
+	&::after {
+		background: #fd01e9;
+		background: linear-gradient(90deg,
+				#fd01e9,
+				rgba(185, 2, 253, 0.7) 25%,
+				rgba(108, 0, 239, 0.6) 50%,
+				#6c00ef);
+		bottom: 0;
+		content: "";
+		height: 2px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
 }
 
-.copyright{
+.copyright {
 	font-size: $step-0;
 	padding-top: $step-1;
 	padding-bottom: $step-1;
@@ -42,18 +60,20 @@
 }
 
 .social {
-	padding: 1.6rem 0 2rem;
+	padding: 1.6rem 0.5rem;
 }
 
 .social a {
 	padding: 0 10px;
 }
 
-.social img {
-	width: 24px;
+.social .icon {
+	width: 30px;
+	height: 30px;
 	margin-top: 10px;
 	opacity: 0.8;
 }
+
 
 @media screen and (max-width: 899px) {
 	.footer-main hr {
@@ -73,13 +93,19 @@
 	}
 
 	.social {
-		padding: 0.5rem 0 3rem;
+		padding: 0.5rem 3rem;
+	}
+
+	.social .icon {
+		width: 24px;
+		height: 24px;
 	}
 
 	.lets-meet {
 		font-size: 13vw;
 	}
-	.copyright{
+
+	.copyright {
 		font-size: 12px;
 		padding-left: 2rem;
 		padding-right: 2rem;

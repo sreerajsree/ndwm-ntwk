@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Logo from "../header/logo/Logo"
 import Navigation from "../header/navigation/Navigation"
+import Footer from "../footer/Footer";
+import Fullscreen from "../fullscreen/Fullscreen"
+import ContactModal from "../modals/ContactModal";
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div>
       <Head>
@@ -11,6 +14,10 @@ const Layout = () => {
       </Head>
       <Logo/>
       <Navigation/>
+      {children}
+      <Footer />
+      <Fullscreen />
+      <ContactModal/>
     </div>
   );
 };

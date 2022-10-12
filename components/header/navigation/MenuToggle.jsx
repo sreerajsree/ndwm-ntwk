@@ -34,8 +34,8 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
       <svg
         className="menu-toggle-svg"
         viewBox="0 0 5 15"
-        height="40px"
-        width="40px"
+        height="50px"
+        width="50px"
       >
         <path
           d="M10,2 L2,2"
@@ -43,7 +43,7 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
           style={{ fill: "none", stroke: "white", strokeLinecap: "square" }}
         />
         <path
-          d="M2,5 L30,5"
+          d="M2,5 L6,5"
           ref={middleRef}
           style={{ fill: "none", stroke: "white", strokeLinecap: "square" }}
         />

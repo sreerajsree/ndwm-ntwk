@@ -3,9 +3,6 @@
 	width: 100%;
 	height: 100vh;
 	position: fixed;
-	display: flex;
-	align-items: center;
-	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
 	@include noise-background;
 	background-color: $black;
 
@@ -33,6 +30,16 @@
 		padding-left: $step-1;
 	}
 }
+.nav .background {
+	background: #fd01e9;
+    background: linear-gradient(197deg,rgba(253,1,233,.6),rgba(185,2,253,.65) 20%,rgba(108,0,239,.6) 40%,rgba(108,0,239,.35) 60%,rgba(15,16,35,.23) 80%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
+}
 
 @media only screen and (max-width: 899px) {
 	.nav {
@@ -48,5 +55,8 @@
 		li:hover a {
 			padding-left: 0;
 		}
+	}
+	.nav .background {
+		justify-content: center;
 	}
 }

@@ -28,11 +28,13 @@ export default function Menu({ isMenuOpen }) {
       animate={isMenuOpen ? "open" : "closed"}
       variants={menuVariants}
     >
-      <ul>
-        {links.map((link, i) => (
-          <MenuItem link={link} key={i} />
-        ))}
-      </ul>
+      <div className="background">
+        <ul>
+          {links.map((link, i) => (
+            <MenuItem link={link} key={i} />
+          ))}
+        </ul>
+      </div>
     </motion.nav>
   );
 }
