@@ -45,7 +45,6 @@
 	@include center-content;
 }
 
-
 .arrow{
 	left: 50%;
 }
@@ -92,7 +91,7 @@
 }
 
 .landing-content-title {
-	font-family: $font-family-heading;
+	font-family: $font-family-yeseva;
 	font-weight: normal;
 	display: flex;
 	font-size: 4rem;
@@ -129,12 +128,12 @@
 }
 
 .ndwm{
-	color: aqua;
+	color: rgb(138, 24, 231);
 }
 
 .text-italic{
-	font-style: italic;
 	font-size: 6rem;
+	font-style: italic;
 }
 .brand-logo{
 	width: 250px;
@@ -142,7 +141,7 @@
 .link{
 	text-decoration: underline;
 	text-underline-offset: 8px;
-	text-decoration-color: aqua;
+	text-decoration-color: rgb(138, 24, 231);
 }
 // Self introduction
 .self-intro {
@@ -150,11 +149,14 @@
 	margin-top: 5rem;
 
 	p {
+		font-family: $font-family-cinzel;
 		opacity: 0;
-		font-size: $step-4;
+		font-size: $step-3;
 		font-weight: bold;
 		min-height: 350px;
 		will-change: transform;
+		max-width: 50%;
+		margin: auto
 	}
 }
 
@@ -323,14 +325,21 @@
 @media screen and (max-width: 599px) {
 	.landing-content-title {
 		flex-direction: column;
-		font-size: $step-10;
+		font-size: $step-5;
 		margin: 10px 0;
 		padding-top: 0px;
-		line-height: 50px;
+		line-height: 60px;
 	}
 	.text-italic {
 		font-style: italic;
-		font-size: 2rem;
+		font-size: $step-10;
+	}
+	.self-intro {
+		text-align: center;
+		p {
+			max-width: 80%;
+			margin: auto
+		}
 	}
 	
 }

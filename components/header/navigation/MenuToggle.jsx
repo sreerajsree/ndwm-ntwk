@@ -34,8 +34,8 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
       <svg
         className="menu-toggle-svg"
         viewBox="0 0 5 15"
-        height="50px"
-        width="50px"
+        height="40px"
+        width="40px"
       >
         <path
           d="M10,2 L2,2"
