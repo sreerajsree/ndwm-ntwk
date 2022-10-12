@@ -1,0 +1,40 @@
+.video-title {
+	font-size: $step-3;
+	font-family: $font-family-heading;
+	color: $white;
+	text-align: center;
+	padding: 0 2rem 2rem;
+	margin-top: -15px;
+	line-height: $line-height-md;
+}
+
+#modal {
+	width: 100%;
+	height: 90%;
+	background: none;
+	box-shadow: none;
+	max-width: 1200px;
+	padding: 20px 14px;
+	margin: auto;
+}
+
+#close-button {
+	background: white;
+	outline: none;
+}
+
+@media screen and (min-width: 599px) and (max-width: 899px) {
+	#modal {
+		height: 65%;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.video-title {
+		font-size: $step-2;
+	}
+
+	#modal {
+		height: 45%;
+	}
+}

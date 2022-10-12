@@ -1,0 +1,17 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* chrome | safari */
+}
+
+ul {
+	list-style-type: none;
+}

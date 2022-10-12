@@ -1,0 +1,87 @@
+.footer {
+	text-align: center;
+	@include noise-background;
+	background-color: $white;
+}
+
+.footer a,
+.footer span,
+.footer div {
+	color: $black;
+}
+
+.lets-meet {
+	font-family: "Have Heart One", serif;
+	font-size: $step-8;
+}
+
+.footer-main{
+	padding-top : 30px;
+}
+
+.footer-main hr {
+	border: none;
+	height: 1px;
+	width: 600px;
+	margin: auto;
+	background-color: $black;
+	opacity: 0.1;
+}
+
+.copyright{
+	font-size: $step-0;
+	padding-top: $step-1;
+	padding-bottom: $step-1;
+}
+
+.mail {
+	font-size: $step-1;
+	display: block;
+	padding: 0 0 1.6rem;
+	opacity: 0.8;
+}
+
+.social {
+	padding: 1.6rem 0 2rem;
+}
+
+.social a {
+	padding: 0 10px;
+}
+
+.social img {
+	width: 24px;
+	margin-top: 10px;
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 899px) {
+	.footer-main hr {
+		width: 250px;
+	}
+
+	.mail {
+		font-size: $step-1;
+	}
+
+	.social img {
+		width: 18px;
+	}
+
+	.mail {
+		padding: 0 0 0.5rem;
+	}
+
+	.social {
+		padding: 0.5rem 0 3rem;
+	}
+
+	.lets-meet {
+		font-size: 13vw;
+	}
+	.copyright{
+		font-size: 12px;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}

@@ -1,0 +1,26 @@
+// Center content
+@mixin center-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+// Text stroke
+@mixin text-stroke {
+	-webkit-text-stroke: clamp(0.8px, 0.18vw, 1.8px) white;
+	font-weight: lighter;
+	color: transparent;
+}
+
+@mixin text-stroke-hover {
+	-webkit-text-fill-color: unset;
+	color: $white;
+}
+
+// Background noise effect
+@mixin noise-background {
+	background: url("../../public/images/noise.png");
+	animation: $noise;
+}
