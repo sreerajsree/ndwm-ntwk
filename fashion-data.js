@@ -16,11 +16,5 @@ export const fashiondata = [
 		title: "Here’s How Naomi Campbell Is Glowing Through The Pandemic",
 		img: "https://thefashionenthusiast.netlify.app/assets/img/header/index-01/naomi.webp",
 		url: "https://thefashionenthusiast.netlify.app/",
-	},
-	{
-		id: 4,
-		title: "The Best Moments at New York Fashion Week, Day 6",
-		img: "https://thefashionenthusiast.netlify.app/assets/img/header/index-01/nyfw-2022.webp",
-		url: "https://thefashionenthusiast.netlify.app/",
-	},
+	}
 ]
