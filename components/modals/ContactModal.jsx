@@ -17,11 +17,11 @@ export default function ContactModal() {
       width="24"
       height="24"
       fill="#070F17"
-      shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
-      image-rendering="optimizeQuality"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      shapeRendering="geometricPrecision"
+      textRendering="geometricPrecision"
+      imageRendering="optimizeQuality"
+      fillRule="evenodd"
+      clipRule="evenodd"
       viewBox="0 0 512 508.33"
     >
       <path
@@ -109,6 +109,7 @@ export default function ContactModal() {
                   <a
                     className="mailer"
                     target="_blank"
+                    rel="noreferrer" 
                     href="mailto:ninedayswondermedia@gmail.com?subject=Hi ! I'm contacting because..."
                   >
                     ninedayswondermedia@gmail.com
@@ -131,6 +132,7 @@ export default function ContactModal() {
                   </a>
                   <a
                     target="_blank"
+                    rel="noreferrer" 
                     href="https://www.instagram.com/ninedayswondermedia/"
                   >
                     <TbBrandInstagram className="contact-social-icons" />

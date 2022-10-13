@@ -1,7 +1,7 @@
 export const beautydata = [
 	{
 		id: 1,
-		title: "DIOR Beauty Launch Industry First WhatsApp Campaign With Global Influencer Jisoo",
+		title: "DIOR Beauty Launch Industry-First WhatsApp Campaign With Global Influencer Jisoo",
 		img: "https://thefashionenthusiast.netlify.app/assets/img/header/index-01/jisoo-dior.webp",
 		url: "https://thefashionenthusiast.netlify.app/",
 	},

@@ -77,7 +77,7 @@ const Home = ({articles}) => {
 				`}
       </Script>
       <Head>
-        <title>Nine Day's Wonder Media Network</title>
+        <title>Nine Day&apos;s Wonder Media Network</title>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <section className="landing full-bleed">
@@ -124,15 +124,16 @@ const Home = ({articles}) => {
             <img src="/graphics/flow.png" alt="flow" width="500px" />
           </div>
           <p>
-            We <span className="ndwm">Nine Day's Wonder Media Network</span> is
+            We <span className="ndwm">Nine Day&apos;s Wonder Media Network</span> is
             a publisher of fashion trade websites for the fashion, retail and
             beauty industries.
           </p>
           <p>
-            Nine Day's Wonder Media Netwok brands include <br />
+            Nine Day&apos;s Wonder Media Netwok brands include <br />
             <a
               className="link"
               target="_blank"
+              rel="noreferrer"
               href="https://thefashionenthusiast.netlify.app/"
             >
               The Fashion Enthusiast

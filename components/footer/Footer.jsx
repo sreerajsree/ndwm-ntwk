@@ -21,6 +21,7 @@ export default function Footer() {
           <div className="footer-main">
             <a
               target="_blank"
+              rel="noreferrer"
               href="mailto:ninedayswondermedia@gmail.com?subject=Hi! I'm contacting because..."
               className="mail"
             >
@@ -33,6 +34,7 @@ export default function Footer() {
               </a>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.instagram.com/ninedayswondermedia/"
               >
                 <TbBrandInstagram className="icon" />

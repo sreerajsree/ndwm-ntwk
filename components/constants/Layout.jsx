@@ -11,7 +11,7 @@ export default function Layout({ children, articles }) {
   return (
     <div className="layout-container">
       <Head>
-        <title>Nine Day's Wonder Media Network</title>
+        <title>Nine Day&apos;s Wonder Media Network</title>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Logo />
