@@ -88,6 +88,49 @@ hr {
 	margin-top: 10px;
 	opacity: 0.8;
 }
+.slider {
+    bottom: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 141s linear infinite;
+}
+
+.marquee p {
+    display: inline-block;
+    padding: 1rem 1.6rem 0.8rem 0;
+    font-size: 1rem;
+	color: #000;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.hover_underline {
+    transition: all 0.3s ease-out;
+}
+
+.hover_underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 
 @media screen and (max-width: 899px) {

@@ -17,7 +17,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
+const Home = ({articles}) => {
   useEffect(() => {
     let video = document.querySelector("video");
     window.addEventListener("scroll", function () {
@@ -62,7 +62,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <Layout>
+    <Layout articles={articles}>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-0TY8EGGHXN"
         strategy="afterInteractive"
@@ -309,4 +309,26 @@ export default function Home() {
       </section>
     </Layout>
   );
-}
+};
+
+export const getServerSideProps = async (pageContext) => {
+  const apiResponse = await fetch(
+    `https://newsapi.org/v2/everything?q=fashion&pageSize=20`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+      },
+    }
+  );
+
+  const apiJson = await apiResponse.json();
+  const { articles } = apiJson;
+
+  return {
+    props: {
+        articles: articles
+    }
+  }
+};
+
+export default Home;
