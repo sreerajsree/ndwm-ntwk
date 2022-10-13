@@ -182,8 +182,9 @@
 	}
 
 	.contact-heading-subtext {
-		color: #666;
+		color: #fff;
 		font-size: 16px;
+		margin-bottom: 20px;
 	}
 
 	.contact-info-section {
@@ -202,12 +203,12 @@
 	}
 
 	.contact-social-icons {
-		max-width: 16px;
-		max-height: 16px;
+		width: 24px;
+		height: 24px;
 	}
 
 	.contact-social-icons:nth-child(n+1) {
-		margin: 0 17px 0 0;
+		margin: 10px 20px 0 0;
 	}
 
 	.contact-btn {
@@ -227,8 +228,8 @@
 	}
 
 	.contact-social-icons {
-		width: 18px;
-		height: 18px;
+		width: 24px;
+		height: 24px;
 	}
 }
 

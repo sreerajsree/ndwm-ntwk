@@ -6,6 +6,7 @@ body {
 	user-select: none;
 	overscroll-behavior-y: none;
 	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: $font-family-main;

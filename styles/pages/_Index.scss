@@ -45,49 +45,51 @@
 	@include center-content;
 }
 
-.arrow{
+.arrow {
 	left: 50%;
 }
+
 .arrow:before {
-  position: absolute;
-  left: 50%;
+	position: absolute;
+	left: 50%;
 }
 
 .arrow {
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  margin: 30px 0 0 -20px;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin: 30px 0 0 -20px;
+	transform: rotate(45deg);
+	border-left: none;
+	border-top: none;
+	border-right: 2px #fff solid;
+	border-bottom: 2px #fff solid;
 }
 
 .arrow:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
+	content: "";
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	margin: -10px 0 0 -10px;
+	border-left: none;
+	border-top: none;
+	border-right: 1px #fff solid;
+	border-bottom: 1px #fff solid;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: arrow;
 }
 
 @keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-10px, -10px);
-  }
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(-10px, -10px);
+	}
 }
 
 .landing-content-title {
@@ -99,19 +101,21 @@
 	line-height: 100px;
 }
 
-.text-animation{
+.text-animation {
 	outline: none;
 	background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
 	background-size: 400%;
 	background-clip: text;
-	-webkit-text-fill-color: transparent; 
+	-webkit-text-fill-color: transparent;
 	animation: animate 10s linear infinite;
 }
+
 @keyframes animate {
-	to{
-	  background-position: 400%;
+	to {
+		background-position: 400%;
 	}
-  }
+}
+
 .watch-showreel-btn {
 	font-family: $font-family-heading;
 	text-transform: uppercase;
@@ -127,24 +131,27 @@
 	letter-spacing: 3px;
 }
 
-.ndwm{
+.ndwm {
 	color: rgb(138, 24, 231);
 }
 
-.text-italic{
+.text-italic {
 	font-size: 6rem;
 	font-style: italic;
 }
-.brand-logo{
+
+.brand-logo {
 	width: 250px;
 }
-.link{
+
+.link {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 	text-decoration-color: rgb(138, 24, 231);
 }
-// Self introduction
-.self-intro {
+
+// Introduction
+.intro {
 	text-align: center;
 	margin-top: 5rem;
 
@@ -160,14 +167,26 @@
 	}
 }
 
-// Skills
-.skills {
+.flow {
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+	}
+
+}
+
+
+// Images
+.images {
 	@include center-content;
 	position: relative;
 
 	h3 {
 		text-shadow: 0 10px 40px rgb(0 0 0 / 55%);
 		z-index: 1;
+		font-family: $font-family-heading;
 	}
 }
 
@@ -278,20 +297,23 @@
 
 	p {
 		margin-bottom: 3rem;
+		text-decoration: underline;
+		text-underline-offset: 8px;
+		text-decoration-color: rgb(138, 24, 231);
 	}
 }
 
 .brands-images {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-	opacity: 0.5;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	opacity: 0.8;
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 // Productions
@@ -330,24 +352,27 @@
 		padding-top: 0px;
 		line-height: 60px;
 	}
+
 	.text-italic {
 		font-style: italic;
 		font-size: $step-10;
 	}
-	.self-intro {
+
+	.intro {
 		text-align: center;
+
 		p {
 			max-width: 80%;
 			margin: auto
 		}
 	}
-	
+
 }
 
 @media screen and (max-width: 899px) {
-  .watch-showreel-btn {
+	.watch-showreel-btn {
 		font-size: 12px;
-		  padding: 0.6rem 1.2rem;
+		padding: 0.6rem 1.2rem;
 	}
 
 	.brands {
@@ -363,7 +388,7 @@
 	}
 }
 
-// Media queries for skills section images
+// Media queries for  section images
 @media screen and (max-width: 599px) {
 	#img-wrapper_1-1 {
 		width: clamp(300px, 80vw, 1366px);
@@ -407,11 +432,11 @@
 		right: 10%;
 	}
 
-#img-wrapper_2-4 {
-	width: clamp(200px, 20vw, 640px);
-	top: 85%;
-	right: 0;
-}
+	#img-wrapper_2-4 {
+		width: clamp(200px, 20vw, 640px);
+		top: 85%;
+		right: 0;
+	}
 
 	#img-wrapper_3-1 {
 		width: clamp(180px, 25vw, 480px);
@@ -432,7 +457,7 @@
 	}
 }
 
-// Media queries for skills section images
+// Media queries for section images
 @media screen and (min-width: 599px) and (max-width: 899px) {
 	#img-wrapper_1-1 {
 		width: clamp(300px, 65vw, 1366px);

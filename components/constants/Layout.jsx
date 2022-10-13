@@ -1,25 +1,23 @@
 import Head from "next/head";
-import Logo from "../header/logo/Logo"
-import Navigation from "../header/navigation/Navigation"
+import Navigation from "../header/navigation/Navigation";
+import Logo from "../header/logo/Logo";
 import Footer from "../footer/Footer";
-import Fullscreen from "../fullscreen/Fullscreen"
+import Fullscreen from "../fullscreen/Fullscreen";
 import ContactModal from "../modals/ContactModal";
 
-const Layout = ({children}) => {
+export default function Layout({ children }) {
   return (
-    <div>
+    <div className="layout-container">
       <Head>
         <title>Nine Day's Wonder Media Network</title>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      <Logo/>
-      <Navigation/>
+      <Logo />
+      <Navigation />
       {children}
       <Footer />
       <Fullscreen />
-      <ContactModal/>
+      <ContactModal />
     </div>
   );
-};
-
-export default Layout;
+}

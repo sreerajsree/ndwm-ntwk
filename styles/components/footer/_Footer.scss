@@ -1,18 +1,33 @@
 .footer {
 	text-align: center;
 	@include noise-background;
-	background-color: $white;
+	background-color: $black;
+}
+
+.footer .background {
+	background: #fd01e9;
+    background: linear-gradient(197deg,rgba(253,1,233,.6),rgba(185,2,253,.65) 20%,rgba(108,0,239,.6) 40%,rgba(108,0,239,.35) 60%,rgba(15,16,35,.23) 80%);
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+	padding: $step-6;
 }
 
 .footer a,
 .footer span,
 .footer div {
-	color: $black;
+	color: $white;
 }
 
 .lets-meet {
-	font-family: $font-family-cinzel;
 	font-size: $step-4;
+}
+
+.lets-meet img{
+	width: 300px;
+    animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
 
 .footer-main {
@@ -103,6 +118,10 @@ hr {
 
 	.lets-meet {
 		font-size: 13vw;
+	}
+	.lets-meet img{
+		width: 250px;
+		animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 	}
 
 	.copyright {
