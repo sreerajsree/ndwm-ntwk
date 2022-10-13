@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
             <hr className="fancy" />
             <p className="copyright">
-              Copyright &#169; {new Date().getFullYear()} Nine Day's Wonder
+              Copyright &#169; {new Date().getFullYear()} Nine Day&apos;s Wonder
               Media Network. All Rights Reserved.{" "}
             </p>
           </div>
