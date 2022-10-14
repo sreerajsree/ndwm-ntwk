@@ -105,7 +105,7 @@ export default function Productions({fashionData, beautyData, celebData, luxuryD
 							setImage(d?.urlToImage)
 						}}
 					>
-						<img src={d?.urlToImage} />
+						<img src={d?.urlToImage} alt={d?.title} />
 						<span>{d?.title}</span>
 					</div>
 				))}

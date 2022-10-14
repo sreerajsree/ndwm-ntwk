@@ -5,7 +5,7 @@ const Advertise = () => {
   return (
     <Layout>
     <Head>
-        <title>Advertise | Nine Day's Wonder Media Network</title>
+        <title>Advertise | Nine Day&apos;s Wonder Media Network</title>
     </Head>
     <div className="margin"></div>
     <section className="about-hero">
@@ -17,7 +17,7 @@ const Advertise = () => {
     <section className="about-photo full-bleed">
         <div className="about-linear-gradient-div-top"></div>
         <div className="about-linear-gradient-div-bottom"></div>
-        <img className="advertise-image" src="/images/advertise.jpeg" alt="Nine Day's Wonder Media" />
+        <img className="advertise-image" src="/images/advertise.jpeg" alt="Nine Day's Wonder Media Network" />
     </section>
 
     <section className="advertise">

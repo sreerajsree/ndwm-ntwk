@@ -161,6 +161,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="1366"
                 height="570"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -172,6 +173,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="640"
                 height="360"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -183,6 +185,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="519"
                 height="369"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -194,6 +197,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="750"
                 height="336"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -205,6 +209,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="1080"
                 height="1350"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -216,6 +221,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="640"
                 height="800"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -227,6 +233,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="750"
                 height="938"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -238,6 +245,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="640"
                 height="729"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -249,6 +257,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="480"
                 height="853"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -260,6 +269,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="640"
                 height="1138"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
@@ -271,6 +281,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
                 width="320"
                 height="569"
                 loading="eager"
+                alt="Nine Day's Wonder Media Network"
               />
             </ParallaxOverflow>
           </div>
