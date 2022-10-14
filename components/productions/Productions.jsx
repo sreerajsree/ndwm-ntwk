@@ -3,10 +3,6 @@ import { useState, useEffect, useRef } from 'react'
 import ProductionList from "../productionList/ProductionList"
 import { FadeIn } from "../animations/FadeIn"
 import VideoModal from "../modals/VideoModal"
-import { fashiondata } from '../../fashion-data'
-import { beautydata } from '../../beauty-data'
-import { celebritydata } from '../../celebrity-data'
-import { luxurydata } from '../../luxury-data'
 
 
 

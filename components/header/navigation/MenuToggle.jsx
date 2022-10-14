@@ -43,7 +43,7 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
           style={{ fill: "none", stroke: "white", strokeLinecap: "square" }}
         />
         <path
-          d="M2,5 L6,5"
+          d="M2,5 L12,5"
           ref={middleRef}
           style={{ fill: "none", stroke: "white", strokeLinecap: "square" }}
         />
