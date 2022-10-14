@@ -10,8 +10,7 @@ import { luxurydata } from '../../luxury-data'
 
 
 
-export default function Productions() {
-
+export default function Productions({fashionData, beautyData, celebData, luxuryData}) {
 
 	const [selected, setSelected] = useState("fashion")
 
@@ -19,7 +18,7 @@ export default function Productions() {
 	const [data, setData] = useState(dataArray)
 
 	const [open, setOpen] = useState(false)
-	const [url, setUrl] = useState()
+	const [description, setDescription] = useState()
 	const [title, setTitle] = useState()
 	const [img, setImage] = useState()
 
@@ -59,19 +58,19 @@ export default function Productions() {
 	useEffect(() => {
 		switch (selected) {
 			case "fashion":
-				setData(fashiondata);
+				setData(fashionData.articles);
 				break;
 			case "beauty":
-				setData(beautydata);
+				setData(beautyData.articles);
 				break;
 			case "celebrity":
-				setData(celebritydata);
+				setData(celebData.articles);
 				break;
 			case "luxury":
-				setData(luxurydata);
+				setData(luxuryData.articles);
 				break;
 			default:
-				setData(fashiondata);
+				setData(fashionData.articles);
 		}
 	}, [selected])
 
@@ -82,7 +81,7 @@ export default function Productions() {
 			</FadeIn>
 
 			<ul>
-				{list.map(item => (
+				{list.map((item, key) => (
 					<ProductionList
 						key={item.id}
 						id={item.id}
@@ -96,22 +95,22 @@ export default function Productions() {
 
 			<hr />
 
-			<VideoModal open={open} setOpen={setOpen} url={url} title={title} img={img} />
+			<VideoModal open={open} setOpen={setOpen} description={description} title={title} img={img} />
 
 			<div className="production-list-container">
-				{slice.map(d => (
+				{slice.map((d, key) => (
 					<div
-						key={d.id}
+						key={key}
 						className="item"
 						onClick={() => {
 							setOpen(true)
-							setUrl(d.url)
-							setTitle(d.title)
-							setImage(d.img)
+							setDescription(d.description)
+							setTitle(d?.title)
+							setImage(d?.urlToImage)
 						}}
 					>
-						<img src={d.img} />
-						<span>{d.title}</span>
+						<img src={d?.urlToImage} />
+						<span>{d?.title}</span>
 					</div>
 				))}
 			</div>

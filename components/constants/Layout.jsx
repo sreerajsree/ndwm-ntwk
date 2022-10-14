@@ -6,7 +6,7 @@ import Fullscreen from "../fullscreen/Fullscreen";
 import ContactModal from "../modals/ContactModal";
 import Slider from "../slider/Slider";
 
-export default function Layout({ children, articles }) {
+export default function Layout({ children }) {
   
   return (
     <div className="layout-container">
@@ -17,7 +17,7 @@ export default function Layout({ children, articles }) {
       <Logo />
       <Navigation />
       {children}
-      <Slider articles={articles} />
+      <Slider />
       <Footer />
       <Fullscreen />
       <ContactModal />

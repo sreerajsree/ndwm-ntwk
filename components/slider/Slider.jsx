@@ -1,21 +1,14 @@
 import { BsDot } from "react-icons/bs";
 
-const Slider = ({ articles }) => {
-  console.log(articles);
+const Slider = () => {
   return (
     <div className="slider">
       <div className="wrapper">
         <div className="marquee">
-          {articles.map((item, key) => (
-            <p
-              onClick={() => (document.location.href = item?.url)}
-              key={key}
-              className="hover_underline"
-            >
-               <BsDot />
-              {item?.title}
-            </p>
-          ))}
+          <p className="hover_underline">
+            <BsDot />
+            Testing
+          </p>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Home = ({articles}) => {
+const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
   useEffect(() => {
     let video = document.querySelector("video");
     window.addEventListener("scroll", function () {
@@ -62,7 +62,7 @@ const Home = ({articles}) => {
     });
   }, []);
   return (
-    <Layout articles={articles}>
+    <Layout >
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-0TY8EGGHXN"
         strategy="afterInteractive"
@@ -306,15 +306,39 @@ const Home = ({articles}) => {
             ></path>
           </svg>
         </div>
-        <Productions />
+        <Productions fashionData={fashionData} beautyData={beautyData} celebData={celebData} luxuryData={luxuryData} />
       </section>
     </Layout>
   );
 };
 
 export const getServerSideProps = async (pageContext) => {
-  const apiResponse = await fetch(
-    `https://newsapi.org/v2/everything?q=fashion&pageSize=20`,
+  const fashionRes = await fetch(
+    `https://newsapi.org/v2/everything?q=fashion&pageSize=10`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+      },
+    }
+  );
+  const beautyRes = await fetch(
+    `https://newsapi.org/v2/everything?q=beauty&pageSize=10`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+      },
+    }
+  );
+  const celebRes = await fetch(
+    `https://newsapi.org/v2/everything?q=celebrity-style&pageSize=10`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+      },
+    }
+  );
+  const luxuryRes = await fetch(
+    `https://newsapi.org/v2/everything?q=luxury-fashion&pageSize=10`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
@@ -322,12 +346,22 @@ export const getServerSideProps = async (pageContext) => {
     }
   );
 
-  const apiJson = await apiResponse.json();
-  const { articles } = apiJson;
+
+  const apiFashion = await fashionRes.json();
+  const apiBeauty = await beautyRes.json();
+  const apiCeleb = await celebRes.json();
+  const apiLuxury = await luxuryRes.json();
+  const fashionData  = apiFashion;
+  const beautyData = apiBeauty;
+  const celebData = apiCeleb;
+  const luxuryData = apiLuxury;
 
   return {
     props: {
-        articles: articles
+      fashionData: fashionData,
+      beautyData: beautyData,
+      celebData: celebData,
+      luxuryData: luxuryData
     }
   }
 };
