@@ -1,84 +1,22 @@
-.about-hero {
-    @include center-content;
-      min-height: 100vh;
-      margin-top: 40px;
-      margin-bottom: 7vw;
-  }
-  
-  .about-hero h1 {
-      overflow: hidden;
-  }
-  
-  .about-hero h1 span {
-      display: block;
-      background: linear-gradient(180deg, $black 0%, $grey 60%);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
-      font-size: $step-8;
-  }
-  
-  .about-photo {
-      margin-bottom: 7vw;
-      position: relative;
-      background: darkorange;
-      img {
-          object-fit: cover;
-          display: block;
-      }
-      .about-linear-gradient-div-top,
-      .about-linear-gradient-div-bottom {
-          position: absolute;
-          width: 100%;
-          height: 50%;
-      }
-      .about-linear-gradient-div-top {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-          top: -2.5%;
-      }
-  
-      .about-linear-gradient-div-bottom {
-          background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-          bottom: -0.5%;
-      }
-  }
-  .italics{
-    font-style: italic;
-  }
-  .intro {
-      margin-bottom: 7vw;
-      .intro-text {
-          text-align: center;
-          a {
-              font-style: italic;
-              text-decoration: underline;
-              text-underline-offset: 4px;
-              text-decoration-color: aqua;
-          }
-      }
-      .intro-text {
-          text-align: center;
-          p {
-              padding-top: 20px;
-          }
-          h5{
-            padding-top: 30px;
-            line-height: 40px;
-          }
-      }
-  }
-  
-  @media (max-width: 599px) {
-      .about-hero {
-          text-align: left;
-          align-items: start;
-          min-height: unset;
-          margin-top: 100px;
-      }
-  
-      .intro {
-          .intro-text {
-              text-align: left;
-          }
-      }
-  }
+.advertise-image {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+.advertise {
+    text-align: center;
+}
+
+.advertise h5 {
+    font-family: $font-family-heading;
+    margin-bottom: 20px;
+}
+.advertise p {
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 599px) {
+    .advertise p{
+        margin-bottom: 5rem;
+    }
+}

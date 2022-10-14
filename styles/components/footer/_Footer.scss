@@ -102,7 +102,7 @@ hr {
 .marquee {
     white-space: nowrap;
     display: inline-block;
-    animation: marquee 141s linear infinite;
+    animation: marquee 51s linear infinite;
 }
 
 .marquee p {
@@ -110,6 +110,7 @@ hr {
     padding: 1rem 1.6rem 0.8rem 0;
     font-size: 1rem;
 	color: #000;
+	text-transform: uppercase;
 }
 
 @keyframes marquee {
@@ -151,12 +152,15 @@ hr {
 	}
 
 	.social {
-		padding: 0.5rem 3rem;
+		padding: 0.5rem 0rem;
 	}
 
 	.social .icon {
-		width: 24px;
-		height: 24px;
+		width: 22px;
+		height: 22px;
+	}
+	.icon{
+		margin: 0px !important;
 	}
 
 	.lets-meet {
@@ -171,5 +175,9 @@ hr {
 		font-size: 12px;
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+	.marquee p{
+		font-size: 10px;
+		padding: 6px;
 	}
 }

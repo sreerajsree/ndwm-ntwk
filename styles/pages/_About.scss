@@ -1,8 +1,6 @@
 .about-hero {
   @include center-content;
 	min-height: 100vh;
-	margin-top: 40px;
-	margin-bottom: 7vw;
 }
 
 .about-hero h1 {
@@ -18,14 +16,16 @@
 	font-size: $step-8;
 }
 
+.about-image {
+    width: 100%;
+    height: 80% !important;
+    object-fit: contain;
+}
+
 .about-photo {
 	margin-bottom: 7vw;
 	position: relative;
 	background: darkorange;
-	img {
-		object-fit: cover;
-		display: block;
-	}
 	.about-linear-gradient-div-top,
 	.about-linear-gradient-div-bottom {
 		position: absolute;
@@ -34,45 +34,42 @@
 	}
 	.about-linear-gradient-div-top {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-		top: -2.5%;
+		top: 0%;
 	}
 
 	.about-linear-gradient-div-bottom {
 		background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-		bottom: -3.5%;
+		bottom: 0%;
 	}
 }
 
-.intro {
-	margin-bottom: 7vw;
-	.intro-text {
-		text-align: center;
-		a {
-			font-style: italic;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			text-decoration-color: aqua;
-		}
+.intro-text {
+	width: 70%;
+	margin: auto;
+	h5{
+		line-height: 40px;
 	}
-	.intro-text {
-		text-align: center;
-		p {
-			padding-top: 20px;
+	p {
+		font-size: 20px;
+		a {
+			text-decoration: underline;
+			text-underline-offset: 6px;
+			text-decoration-color: rgb(138 24 231);
 		}
 	}
 }
+
 
 @media (max-width: 599px) {
 	.about-hero {
-		text-align: left;
-		align-items: start;
+		text-align: center;
+		align-items: center;
 		min-height: unset;
-		margin-top: 100px;
 	}
-
-	.intro {
-		.intro-text {
-			text-align: left;
-		}
+	.intro-text {
+		width: 90%;
+	}
+	.margin {
+		padding-top: 100px;
 	}
 }
