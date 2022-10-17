@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/constants/Layout";
+import { TbWorld } from "react-icons/tb";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -58,6 +60,41 @@ const About = () => {
             to the industry&apos;s brightest talent.
           </p>
         </div>
+      </section>
+      <section className="article_section">
+        <h3 className="leadership">LEADERSHIP</h3>
+        <article className="articles">
+          <div className="article_text">
+            <div className="article_heading">
+              SREERAJ S
+            </div>
+            <div className="about">
+              founder / Chief Developer
+            </div>
+            <p className="article_details">
+              At Samsung, we believe our choices today determine a sustainable
+              tomorrow. For more than 20 years, we{"'"}ve been reimagining our
+              products to build environmental sustainability into everything we
+              do, through innovative product design and packaging, as well as
+              energy-saving technology and recycling. We{"'"}ve diverted 4.5
+              million metric tons of e-waste from landfills since 2008, with the
+              goal of being the #1 maker of sustainable products by 2025. So,
+              join us. We can do more together.
+            </p>
+            <div className="about-section">
+              <div>
+                <a href=""><TbWorld className="icon"/></a>
+                <a href=""><IoLogoFacebook className="icon"/></a>
+                <a href=""><IoLogoInstagram className="icon"/></a>
+                <a href=""><IoLogoLinkedin className="icon"/></a>
+                <a href=""><IoLogoTwitter className="icon"/></a>
+              </div>
+            </div>
+          </div>
+          <div className="article_img1">
+            <img src="/images/brands/tfe.svg" alt="The Fashion Enthusiast" />
+          </div>
+        </article>
       </section>
     </Layout>
   );

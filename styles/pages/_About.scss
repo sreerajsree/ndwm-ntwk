@@ -59,6 +59,18 @@
 	}
 }
 
+.leadership {
+	text-align: center;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	text-decoration-color: #7E03A3;
+}
+
+.about {
+	margin-top: 3px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
 
 @media (max-width: 599px) {
 	.about-hero {

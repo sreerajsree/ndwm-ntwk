@@ -62,8 +62,8 @@
 
 // Contact heading section
 .contact-heading-title {
-	font-family: 'Cinzel Decorative', cursive;
-	text-transform: none;
+	font-family: $font-family-heading;
+	text-transform: uppercase;
 	font-weight: 400;
 	margin-bottom: 1rem;
 }

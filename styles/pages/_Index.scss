@@ -156,7 +156,8 @@
 	margin-top: 5rem;
 
 	p {
-		font-family: $font-family-cinzel;
+		font-family:  $font-family-heading;
+		text-transform: uppercase;
 		opacity: 0;
 		font-size: $step-3;
 		font-weight: bold;
