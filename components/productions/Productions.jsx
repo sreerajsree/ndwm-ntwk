@@ -1,111 +1,46 @@
 import React from "react";
-import { useState, useEffect, useRef } from 'react'
-import ProductionList from "../productionList/ProductionList"
+import { useState } from 'react'
 import { FadeIn } from "../animations/FadeIn"
 import VideoModal from "../modals/VideoModal"
 
 
 
-export default function Productions({fashionData, beautyData, celebData, luxuryData}) {
+export default function Productions({ data }) {
+	console.log(data);
 
-	const [selected, setSelected] = useState("fashion")
-
-	const dataArray = new Array(7)
-	const [data, setData] = useState(dataArray)
-
+	const news = data.featured;
 	const [open, setOpen] = useState(false)
-	const [description, setDescription] = useState()
+	const [subtitle, setSubtitle] = useState()
 	const [title, setTitle] = useState()
 	const [img, setImage] = useState()
-
-	const [itemsPerPage, setItemsPerPage] = useState(6)
-	let slice = data.slice(0, itemsPerPage)
-	const viewMoreRef = useRef(null)
-	const viewMore = () => {
-		setItemsPerPage(prevItemsPerPage => prevItemsPerPage + 6)
-	}
-
-	useEffect(() => {
-		if (itemsPerPage < data.length)
-			viewMoreRef.current.style.display = "block"
-		else
-			viewMoreRef.current.style.display = "none"
-	}, [itemsPerPage, data])
-
-	const list = [
-		{
-			id: "fashion",
-			title: "Fashion"
-		},
-		{
-			id: "beauty",
-			title: "Beauty"
-		},
-		{
-			id: "celebrity",
-			title: "Celebrity Style"
-		},
-		{
-			id: "luxury",
-			title: "Luxury"
-		},
-	]
-
-	useEffect(() => {
-		switch (selected) {
-			case "fashion":
-				setData(fashionData.articles);
-				break;
-			case "beauty":
-				setData(beautyData.articles);
-				break;
-			case "celebrity":
-				setData(celebData.articles);
-				break;
-			case "luxury":
-				setData(luxuryData.articles);
-				break;
-			default:
-				setData(fashionData.articles);
-		}
-	}, [selected])
+	const [year, setyear] = useState()
+	const [month, setMonth] = useState()
+	const [slug, setSlug] = useState()
 
 	return (
 		<div className="productions" id="productions">
 			<FadeIn>
 				<h2>fashion <br /> coverage</h2>
 			</FadeIn>
-
-			<ul>
-				{list.map((item, key) => (
-					<ProductionList
-						key={item.id}
-						id={item.id}
-						title={item.title}
-						active={selected === item.id}
-						setSelected={setSelected}
-						setItemsPerPage={setItemsPerPage}
-					/>
-				))}
-			</ul>
-
 			<hr />
-
-			<VideoModal open={open} setOpen={setOpen} description={description} title={title} img={img} />
+			<VideoModal open={open} setOpen={setOpen} subtitle={subtitle} title={title} img={img} year={year} month={month} slug={slug} />
 
 			<div className="production-list-container">
-				{slice.map((d, key) => (
+				{news.map((d, key) => (
 					<div
 						key={key}
 						className="item"
 						onClick={() => {
 							setOpen(true)
-							setDescription(d.description)
+							setSubtitle(d?.subtitle)
 							setTitle(d?.title)
-							setImage(d?.urlToImage)
+							setImage(d?.photo.path)
+							setyear(d?.photo.year)
+							setMonth(d?.photo.month)
+							setSlug(d?.slug)
 						}}
 					>
-						<img src={d?.urlToImage} alt={d?.title} />
+						<img src={`https://thefashionenthusiast.uk/storage/photos/${d?.photo.year}/${d?.photo.month}/${d?.photo.path}`} alt={d?.title} />
 						<span>{d?.title}</span>
 					</div>
 				))}
@@ -113,8 +48,7 @@ export default function Productions({fashionData, beautyData, celebData, luxuryD
 
 			<button
 				className="view-more-btn"
-				onClick={() => viewMore()}
-				ref={viewMoreRef}
+				onClick={event =>  window.location.href='https://thefashionenthusiast.uk/'}
 			>
 				view more
 			</button>

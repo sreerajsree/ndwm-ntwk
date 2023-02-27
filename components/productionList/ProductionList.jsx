@@ -1,11 +1,7 @@
-export default function ProductionList({ id, title, active, setSelected, setItemsPerPage }) {
+export default function ProductionList({ id, title }) {
 	return (
 		<li
-			className={active ? "production-list active" : "production-list"}
-			onClick={() => {
-				setSelected(id)
-				setItemsPerPage(6)
-			}}
+			className="production-list active"
 		>
 			{title}
 		</li>

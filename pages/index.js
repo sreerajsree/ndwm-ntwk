@@ -13,11 +13,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ReelModal from "../components/modals/ReelModal";
 import Script from "next/script";
-import TextTransition, { presets } from "react-text-transition";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
+const Home = ({ data }) => {
   useEffect(() => {
     let video = document.querySelector("video");
     window.addEventListener("scroll", function () {
@@ -26,16 +25,6 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
   }, []);
 
   const [open, setOpen] = useState(false);
-  const TEXTS = [
-    "fashion",
-    "beauty",
-    "models",
-    "runway",
-    "celebrities",
-    "cosmetics",
-    "perfumes",
-    "trends",
-  ];
   const plus = useRef();
   const overlay = useRef();
   const [index, setIndex] = useState(0);
@@ -62,7 +51,7 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
     });
   }, []);
   return (
-    <Layout >
+    <Layout>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-0TY8EGGHXN"
         strategy="afterInteractive"
@@ -78,13 +67,12 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
       </Script>
       <Head>
         <title>Nine Day&apos;s Wonder Media Network</title>
-        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <section className="landing full-bleed">
         <video
           className="video-full-screen"
           poster="/images/runway.webp"
-          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4"
+          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4hh"
           muted
           playsInline
           autoPlay
@@ -96,13 +84,8 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
           <div className="landing-content-title-container">
             <h1 className="landing-content-title">
               <section className="inline">
-                Latest in&nbsp;
-                <TextTransition
-                  springConfig={presets.gentle}
-                  className="title-word text-italic"
-                >
-                  {TEXTS[index % TEXTS.length]}
-                </TextTransition>
+                You are at the top of the&nbsp;
+                <div className="title-word text-italic">Fashion World</div>
               </section>
             </h1>
           </div>
@@ -124,8 +107,9 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
             <img src="/graphics/flow.png" alt="flow" width="500px" />
           </div>
           <p>
-            We <span className="ndwm">Nine Day&apos;s Wonder Media Network</span> is
-            a publisher of fashion trade websites for the fashion, retail and
+            We{" "}
+            <span className="ndwm">Nine Day&apos;s Wonder Media Network</span>{" "}
+            is a publisher of fashion trade websites for the fashion, retail and
             beauty industries.
           </p>
           <p>
@@ -134,9 +118,18 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
               className="link"
               target="_blank"
               rel="noreferrer"
-              href="https://thefashionenthusiast.netlify.app/"
+              href="https://thefashionenthusiast.uk/"
             >
               The Fashion Enthusiast
+            </a>{" "}
+            &{" "}
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+              href=""
+            >
+              BORN-F
             </a>
           </p>
         </TextReveal>
@@ -317,64 +310,22 @@ const Home = ({fashionData, beautyData, celebData, luxuryData}) => {
             ></path>
           </svg>
         </div>
-        <Productions fashionData={fashionData} beautyData={beautyData} celebData={celebData} luxuryData={luxuryData} />
+        <Productions
+          data={data}
+        />
       </section>
     </Layout>
   );
 };
 
-export const getServerSideProps = async (pageContext) => {
-  const fashionRes = await fetch(
-    `https://newsapi.org/v2/everything?q=fashion&pageSize=10`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-      },
-    }
-  );
-  const beautyRes = await fetch(
-    `https://newsapi.org/v2/everything?q=beauty&pageSize=10`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-      },
-    }
-  );
-  const celebRes = await fetch(
-    `https://newsapi.org/v2/everything?q=celebrity-style&pageSize=10`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-      },
-    }
-  );
-  const luxuryRes = await fetch(
-    `https://newsapi.org/v2/everything?q=luxury-fashion&pageSize=10`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-      },
-    }
-  );
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://thefashionenthusiast.uk/api/index/data`)
+  const data = await res.json()
 
+  // Pass data to the page via props
+  return { props: { data } }
+}
 
-  const apiFashion = await fashionRes.json();
-  const apiBeauty = await beautyRes.json();
-  const apiCeleb = await celebRes.json();
-  const apiLuxury = await luxuryRes.json();
-  const fashionData  = apiFashion;
-  const beautyData = apiBeauty;
-  const celebData = apiCeleb;
-  const luxuryData = apiLuxury;
-
-  return {
-    props: {
-      fashionData: fashionData,
-      beautyData: beautyData,
-      celebData: celebData,
-      luxuryData: luxuryData
-    }
-  }
-};
 
 export default Home;

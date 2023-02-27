@@ -14,6 +14,7 @@
 	-webkit-text-fill-color: transparent;
 	animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 	font-size: $step-8;
+	font-family: 'Fugaz One', cursive;
 }
 
 .about-image {
@@ -64,6 +65,7 @@
 	text-decoration: underline;
 	text-underline-offset: 10px;
 	text-decoration-color: #7E03A3;
+	font-weight: normal;
 }
 
 .about {

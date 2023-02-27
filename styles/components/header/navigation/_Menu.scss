@@ -20,6 +20,7 @@
 	a {
 		@include text-stroke;
 		transition: .3s ease;
+		font-family: 'Fugaz One', cursive;
 	}
 
 	a:hover {
@@ -30,6 +31,7 @@
 		padding-left: $step-1;
 	}
 }
+
 .nav .background {
 	background: #fd01e9;
     background: linear-gradient(197deg,rgba(253,1,233,.6),rgba(185,2,253,.65) 20%,rgba(108,0,239,.6) 40%,rgba(108,0,239,.35) 60%,rgba(15,16,35,.23) 80%);
