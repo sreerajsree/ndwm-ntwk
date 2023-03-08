@@ -4,7 +4,7 @@ h3,
 h4 {
 	font-family: $font-family-heading-bold;
 	line-height: $line-height-sm;
-	letter-spacing: $letter-spacing-md;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
@@ -16,7 +16,7 @@ h5{
 
 @media screen and (max-width: 599px) {
 	h1 { font-size: $step-10; }
-	h2 { font-size: $step-8; }
+	h2 { font-size: $step-9; }
 	h3 { font-size: $step-6; }
 	h4 { font-size: $step-5; }
 	h5 { font-size: $step-5; }

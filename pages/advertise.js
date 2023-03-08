@@ -30,8 +30,6 @@ const Advertise = () => {
             <p>Built in collaboration with advertising partners to resonate with our audiences</p>
             <h5>SOCIAL</h5>
             <p>Organic social first programming and promotion, as well as targeted, paid amplification</p>
-            <h5>SPONSORSHIP</h5>
-            <p>Align with premium content across editorial franchises and tentpoles anchored in Sports Illustrated and TheStreet</p>
          </div>
     </section>
 </Layout>

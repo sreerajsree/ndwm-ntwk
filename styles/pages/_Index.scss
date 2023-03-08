@@ -131,12 +131,11 @@
 }
 
 .ndwm {
-	color: rgb(138, 24, 231);
+	color: aqua;
 }
 
 .text-italic {
 	font-size: 6rem;
-	font-style: italic;
 }
 
 .brand-logo {
@@ -146,7 +145,11 @@
 .link {
 	text-decoration: underline;
 	text-underline-offset: 8px;
-	text-decoration-color: rgb(138, 24, 231);
+	text-decoration-color: aqua;
+}
+
+.link:hover{
+	color: aqua;
 }
 
 // Introduction

@@ -6,7 +6,6 @@ import VideoModal from "../modals/VideoModal"
 
 
 export default function Productions({ data }) {
-	console.log(data);
 
 	const news = data.featured;
 	const [open, setOpen] = useState(false)

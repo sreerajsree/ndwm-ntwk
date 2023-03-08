@@ -3,9 +3,6 @@
     height: 80%;
     object-fit: contain;
 }
-.advertise {
-    text-align: center;
-}
 
 .advertise h5 {
     font-family: $font-family-heading;
@@ -13,7 +10,7 @@
     font-weight: normal;
 }
 .advertise p {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 599px) {

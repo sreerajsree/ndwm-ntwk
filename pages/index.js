@@ -113,7 +113,9 @@ const Home = ({ data }) => {
             beauty industries.
           </p>
           <p>
-            Nine Day&apos;s Wonder Media Netwok brands include <br />
+            <span className="ndwm">Nine Day&apos;s Wonder Media Netwok</span>{" "}
+            <br />
+            brands include <br />
             <a
               className="link"
               target="_blank"
@@ -123,12 +125,7 @@ const Home = ({ data }) => {
               The Fashion Enthusiast
             </a>{" "}
             &{" "}
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer"
-              href=""
-            >
+            <a className="link" target="_blank" rel="noreferrer" href="">
               BORN-F
             </a>
           </p>
@@ -310,9 +307,7 @@ const Home = ({ data }) => {
             ></path>
           </svg>
         </div>
-        <Productions
-          data={data}
-        />
+        <Productions data={data} />
       </section>
     </Layout>
   );
@@ -320,12 +315,11 @@ const Home = ({ data }) => {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://thefashionenthusiast.uk/api/index/data`)
-  const data = await res.json()
+  const res = await fetch(`https://thefashionenthusiast.uk/api/index/data`);
+  const data = await res.json();
 
   // Pass data to the page via props
-  return { props: { data } }
+  return { props: { data } };
 }
-
 
 export default Home;

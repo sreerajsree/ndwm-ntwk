@@ -61,11 +61,15 @@
 }
 
 .leadership {
-	text-align: center;
 	text-decoration: underline;
 	text-underline-offset: 10px;
-	text-decoration-color: #7E03A3;
+	text-decoration-color: aqua;
 	font-weight: normal;
+	margin-bottom: 3rem;
+}
+
+.article_details .space {
+	margin: 20px 0;
 }
 
 .about {

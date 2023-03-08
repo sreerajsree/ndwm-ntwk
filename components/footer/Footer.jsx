@@ -6,7 +6,6 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 
-
 export default function Footer() {
   return (
     <>
@@ -42,7 +41,11 @@ export default function Footer() {
               <a target="_blank" href="">
                 <TbBrandYoutube className="icon" />
               </a>
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/ninedayswondermedia/"
+                rel="noreferrer"
+              >
                 <TbBrandLinkedin className="icon" />
               </a>
               <a target="_blank" href="">

@@ -1,11 +1,18 @@
 import { useEffect, useState, useRef } from "react";
+import Head from "next/head";
 import { Swing } from "../components/animations/Swing";
 import { MouseMoveScroll } from "../components/animations/MouseMoveScroll";
 import { data } from "../components/selectedWorks/selected-works-data";
 import Thumbnail from "../components/selectedWorks/Thumbnail";
 import Layout from "../components/constants/Layout";
 import { TbWorld } from "react-icons/tb";
-import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+  IoLogoPinterest,
+} from "react-icons/io5";
 
 const Brands = () => {
   const [thumbnails, setThumbnails] = useState([]);
@@ -85,32 +92,69 @@ const Brands = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>Brands | Nine Day&apos;s Wonder Media Network</title>
+      </Head>
       <section className="article_section">
         <article className="articles">
           <div className="article_text">
-            <div className="article_heading">
-              EVERYDAY CHANGES. MEANINGFUL IMPACT.
-            </div>
+            <div className="article_heading">THE FASHION ENTHUSIAST</div>
             <div className="article_subheading">
-              creating meaningful impact at every step.
+              Fashion around the world 🌍
             </div>
             <p className="article_details">
-              At Samsung, we believe our choices today determine a sustainable
-              tomorrow. For more than 20 years, we{"'"}ve been reimagining our
-              products to build environmental sustainability into everything we
-              do, through innovative product design and packaging, as well as
-              energy-saving technology and recycling. We{"'"}ve diverted 4.5
-              million metric tons of e-waste from landfills since 2008, with the
-              goal of being the #1 maker of sustainable products by 2025. So,
-              join us. We can do more together.
+              The Fashion Enthusiast brings you the latest news about the
+              fashion and beauty industries, designers, celebrities, models, and
+              extensive coverage of fashion week and the runway We are a team of
+              fashion media specialists working in cooperation with the leading
+              fashion, beauty, and retail industries. We create and deliver
+              expert-level publications on the subject of the worldwide fashion
+              network.
             </p>
             <div className="about-section">
               <div>
-                <a href=""><TbWorld className="icon"/></a>
-                <a href=""><IoLogoFacebook className="icon"/></a>
-                <a href=""><IoLogoInstagram className="icon"/></a>
-                <a href=""><IoLogoLinkedin className="icon"/></a>
-                <a href=""><IoLogoTwitter className="icon"/></a>
+                <a
+                  href="https://thefashionenthusiast.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TbWorld className="icon" />
+                </a>
+                <a
+                  href="https://www.facebook.com/thefashionenthusiast.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoFacebook className="icon" />
+                </a>
+                <a
+                  href="https://www.instagram.com/thefashionenthusiast.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoInstagram className="icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/thefashionenthusiast/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoLinkedin className="icon" />
+                </a>
+                <a
+                  href="https://twitter.com/TFE_Worldwide"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoTwitter className="icon" />
+                </a>
+                <a
+                  href="https://www.pinterest.com/TFE_Official/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoPinterest className="icon" />
+                </a>
               </div>
             </div>
           </div>
