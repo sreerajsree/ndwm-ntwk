@@ -29,7 +29,14 @@
 }
 #contact-modal .background {
     background: #fd01e9;
-    background: linear-gradient(197deg,rgba(253,1,233,.6),rgba(185,2,253,.65) 20%,rgba(108,0,239,.6) 40%,rgba(108,0,239,.35) 60%,rgba(15,16,35,.23) 80%);
+    background: linear-gradient(
+      197deg,
+      rgba(1, 253, 232, 0.6),
+      rgba(2, 236, 253, 0.65) 20%,
+      rgba(0, 223, 239, 0.6) 40%,
+      rgba(0, 203, 239, 0.35) 60%,
+      rgba(15, 16, 35, 0.23) 80%
+    );
     height: 100%;
     left: 0;
     position: absolute;
@@ -118,7 +125,7 @@
 .mailer{
 	text-decoration: underline;
 	text-underline-offset: 8px;
-	text-decoration-color: rgb(218, 7, 218);
+	text-decoration-color: aqua;
 }
 
 .form-submit-btn:hover {
