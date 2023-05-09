@@ -120,11 +120,13 @@ const Home = ({ data }) => {
               className="link"
               target="_blank"
               rel="noreferrer"
-              href="https://thefashionenthusiast.uk/"
+              href="https://www.thefashionenthusiast.uk/"
             >
               The Fashion Enthusiast
-            </a>{" "}
-            &{" "}
+            </a>
+            <br />
+            &
+            <br />
             <a className="link" target="_blank" rel="noreferrer" href="">
               BORN-F
             </a>

@@ -95,7 +95,7 @@
 .landing-content-title {
 	font-weight: normal;
 	display: flex;
-	font-size: 4rem;
+	font-size: 3.2rem;
 	padding-top: 30px;
 	line-height: 100px;
 }
@@ -136,6 +136,7 @@
 
 .text-italic {
 	font-size: 6rem;
+	letter-spacing: 10px;
 }
 
 .brand-logo {
@@ -190,6 +191,7 @@
 		z-index: 1;
 		font-family: $font-family-heading;
 		font-weight: normal;
+		font-size: $step-7;
 	}
 }
 
@@ -363,6 +365,7 @@
 
 	.text-italic {
 		font-size: $step-10;
+		letter-spacing: 1px;
 	}
 
 	.intro {
@@ -461,6 +464,10 @@
 		width: clamp(150px, 18vw, 320px);
 		top: 78%;
 		left: 2%;
+	}
+
+	.featured-productions {
+		padding-bottom: 5rem;
 	}
 }
 
