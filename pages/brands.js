@@ -93,7 +93,7 @@ const Brands = () => {
   return (
     <Layout>
       <Head>
-        <title>Brands | Nine Day&apos;s Wonder Media Network</title>
+        <title>Brands | Nine Day&apos;s Wonder Media Group</title>
       </Head>
       <section className="article_section">
         <article className="articles">
@@ -109,7 +109,7 @@ const Brands = () => {
               fashion media specialists working in cooperation with the leading
               fashion, beauty, and retail industries. We create and deliver
               expert-level publications on the subject of the worldwide fashion
-              network.
+              Group.
             </p>
             <div className="about-section">
               <div>

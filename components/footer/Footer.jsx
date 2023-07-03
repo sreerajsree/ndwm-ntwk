@@ -13,8 +13,8 @@ export default function Footer() {
         <div className="background">
           <div className="lets-meet">
             <img
-              src="/images/logowhite.png"
-              alt="Nine Day's Wonder Media Logo"
+              src="/logo/ndwm-light.png"
+              alt="Nine Day's Wonder Media Group Logo"
             />
           </div>
           <div className="footer-main">
@@ -55,7 +55,7 @@ export default function Footer() {
             <hr className="fancy" />
             <p className="copyright">
               Copyright &#169; {new Date().getFullYear()} Nine Day&apos;s Wonder
-              Media Network. All Rights Reserved.{" "}
+              Media Group. All Rights Reserved.{" "}
             </p>
           </div>
         </div>

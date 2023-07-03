@@ -66,7 +66,7 @@ const Home = ({ data }) => {
 				`}
       </Script>
       <Head>
-        <title>Nine Day&apos;s Wonder Media Network</title>
+        <title>Nine Day&apos;s Wonder Media Group</title>
       </Head>
       <section className="landing full-bleed">
         <video
@@ -108,7 +108,7 @@ const Home = ({ data }) => {
           </div>
           <p>
             We{" "}
-            <span className="ndwm">Nine Day&apos;s Wonder Media Network</span>{" "}
+            <span className="ndwm">Nine Day&apos;s Wonder Media Group</span>{" "}
             is a publisher of fashion trade websites for the fashion, retail and
             beauty industries.
           </p>
@@ -153,7 +153,7 @@ const Home = ({ data }) => {
                 width="1366"
                 height="570"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -165,7 +165,7 @@ const Home = ({ data }) => {
                 width="640"
                 height="360"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -177,7 +177,7 @@ const Home = ({ data }) => {
                 width="519"
                 height="369"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -189,7 +189,7 @@ const Home = ({ data }) => {
                 width="750"
                 height="336"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -201,7 +201,7 @@ const Home = ({ data }) => {
                 width="1080"
                 height="1350"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -213,7 +213,7 @@ const Home = ({ data }) => {
                 width="640"
                 height="800"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -225,7 +225,7 @@ const Home = ({ data }) => {
                 width="750"
                 height="938"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -237,7 +237,7 @@ const Home = ({ data }) => {
                 width="640"
                 height="729"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -249,7 +249,7 @@ const Home = ({ data }) => {
                 width="480"
                 height="853"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -261,7 +261,7 @@ const Home = ({ data }) => {
                 width="640"
                 height="1138"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -273,7 +273,7 @@ const Home = ({ data }) => {
                 width="320"
                 height="569"
                 loading="eager"
-                alt="Nine Day's Wonder Media Network"
+                alt="Nine Day's Wonder Media Group"
               />
             </ParallaxOverflow>
           </div>
@@ -287,7 +287,7 @@ const Home = ({ data }) => {
         <FadeInStagger>
           <img
             className="brand-logo"
-            src="/images/brands/tfe.svg"
+            src="/images/brands/logo-white.png"
             alt="The Fashion Enthusiast"
           />
         </FadeInStagger>

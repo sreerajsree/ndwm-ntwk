@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Layout>
       <Head>
-        <title>About | Nine Day&apos;s Wonder Media Network</title>
+        <title>About | Nine Day&apos;s Wonder Media Group</title>
       </Head>
       <div className="margin"></div>
       <section className="about-hero">
@@ -39,7 +39,7 @@ const About = () => {
         <img
           className="about-image"
           src="/images/about.jpg"
-          alt="Nine Day's Wonder Media Network"
+          alt="Nine Day's Wonder Media Group"
         />
       </section>
 
@@ -47,7 +47,7 @@ const About = () => {
         <div className="intro-text">
           <h5>
             We{" "}
-            <span className="ndwm">Nine Day&apos;s Wonder Media Network</span>{" "}
+            <span className="ndwm">Nine Day&apos;s Wonder Media Group</span>{" "}
             is a publisher of fashion trade websites for the fashion, retail and
             beauty industries.
           </h5>
@@ -72,7 +72,7 @@ const About = () => {
           </p>
           <p>
             We are a media company for the future, with a remarkable past. We
-            are Nine Day&apos;s Wonder Media Network.
+            are Nine Day&apos;s Wonder Media Group.
           </p>
           <p className="italics">
             Our Mission: To be the world&apos;s premier publishing and media
