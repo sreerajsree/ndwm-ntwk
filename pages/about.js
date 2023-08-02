@@ -17,10 +17,7 @@ const About = () => {
       <div className="margin"></div>
       <section className="about-hero">
         <h1>
-          <span>know</span>
-        </h1>
-        <h1>
-          <span>about</span>
+          <span>know about</span>
         </h1>
         <h1>
           <span>Nine day&apos;s</span>

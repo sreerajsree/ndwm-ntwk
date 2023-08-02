@@ -7,7 +7,7 @@ import ContactModal from "../modals/ContactModal";
 import Slider from "../slider/Slider";
 
 export default function Layout({ children }) {
-  
+
   return (
     <div className="layout-container">
       <Head>
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
@@ -28,6 +28,9 @@ export default function Layout({ children }) {
         <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jost:wght@500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       <Logo />
       <Navigation />

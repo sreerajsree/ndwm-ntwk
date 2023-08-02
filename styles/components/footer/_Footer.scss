@@ -8,10 +8,10 @@
   background: #fd01e9;
   background: linear-gradient(
       197deg,
-      rgba(1, 253, 232, 0.6),
-      rgba(2, 236, 253, 0.65) 20%,
-      rgba(0, 223, 239, 0.6) 40%,
-      rgba(0, 203, 239, 0.35) 60%,
+      rgba(147, 19, 221, 0.6),
+      rgba(106, 8, 172, 0.65) 20%,
+      rgba(100, 26, 161, 0.6) 40%,
+      rgba(115, 11, 184, 0.35) 60%,
       rgba(15, 16, 35, 0.23) 80%
     );
   height: 100%;
@@ -33,7 +33,7 @@
 }
 
 .lets-meet img {
-  width: 300px;
+  max-width: 220px;
   animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
 
@@ -56,10 +56,10 @@ hr {
     background: #fd01e9;
     background: linear-gradient(
       197deg,
-      rgba(1, 253, 232, 0.6),
-      rgba(2, 236, 253, 0.65) 20%,
-      rgba(0, 223, 239, 0.6) 40%,
-      rgba(0, 203, 239, 0.35) 60%,
+      rgba(124, 13, 189, 0.6),
+      rgba(123, 4, 128, 0.65) 20%,
+      rgba(97, 11, 83, 0.6) 40%,
+      rgba(53, 2, 53, 0.35) 60%,
       rgba(15, 16, 35, 0.23) 80%
     );
     bottom: 0;

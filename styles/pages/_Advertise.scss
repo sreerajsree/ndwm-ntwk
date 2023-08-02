@@ -5,12 +5,13 @@
 }
 
 .advertise h5 {
-    font-family: $font-family-heading;
+    font-family: $font-family-main;
     margin-bottom: 20px;
     font-weight: normal;
 }
 .advertise p {
     margin-bottom: 3rem;
+    font-weight: 500;
 }
 
 @media (max-width: 599px) {

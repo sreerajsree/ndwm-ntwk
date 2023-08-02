@@ -72,7 +72,7 @@ const Home = ({ data }) => {
         <video
           className="video-full-screen"
           poster="/images/runway.webp"
-          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4"
+          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4hg"
           muted
           playsInline
           autoPlay
@@ -84,8 +84,8 @@ const Home = ({ data }) => {
           <div className="landing-content-title-container">
             <h1 className="landing-content-title">
               <section className="inline">
-                You are at the top of the&nbsp;
-                <div className="title-word text-italic">Fashion World</div>
+                <span>You are at the top of the&nbsp;</span>
+                <div className="title-word">Fashion World</div>
               </section>
             </h1>
           </div>
@@ -113,20 +113,17 @@ const Home = ({ data }) => {
             beauty industries.
           </p>
           <p>
-            <span className="ndwm">Nine Day&apos;s Wonder Media Netwok</span>{" "}
-            <br />
+            <span className="ndwm">Nine Day&apos;s Wonder Media Group</span>{" "}
             brands include <br />
             <a
               className="link"
               target="_blank"
               rel="noreferrer"
-              href="https://www.thefashionenthusiast.uk/"
+              href="https://thefashionenthusiast.uk/"
             >
               The Fashion Enthusiast
-            </a>
-            <br />
-            &
-            <br />
+            </a>&nbsp;
+            &&nbsp;
             <a className="link" target="_blank" rel="noreferrer" href="">
               BORN-F
             </a>

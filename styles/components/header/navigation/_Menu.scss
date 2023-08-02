@@ -13,14 +13,14 @@
 		margin-top: $step-1;
 	}
 
-	h1 {
-		font-family: $font-family-heading;
+	h2 {
+		font-family: 'Fugaz One', cursive;
+		text-transform: uppercase
 	}
 
 	a {
 		@include text-stroke;
 		transition: .3s ease;
-		font-family: 'Fugaz One', cursive;
 	}
 
 	a:hover {
@@ -33,20 +33,33 @@
 }
 
 .nav .background {
-	background: aqua;
-    background: linear-gradient(197deg,rgba(1, 253, 232, 0.6),rgba(2, 236, 253, 0.65) 20%,rgba(0, 223, 239, 0.6) 40%,rgba(0, 203, 239, 0.35) 60%,rgba(15,16,35,.23) 80%);
+	background: blueviolet;
+    background: linear-gradient(
+      197deg,
+      rgba(147, 19, 221, 0.6),
+      rgba(106, 8, 172, 0.65) 20%,
+      rgba(100, 26, 161, 0.6) 40%,
+      rgba(115, 11, 184, 0.35) 60%,
+      rgba(15, 16, 35, 0.23) 80%
+    );
     height: 100%;
     position: absolute;
     width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
+	padding: clamp(1rem, -0.875rem + 8.333vw, 8rem);
 }
 
 @media only screen and (max-width: 899px) {
 	.nav {
 		@include center-content;
 		padding-left: 0;
+		text-align: left !important;
+
+		h2 {
+			font-size: 4rem;
+			line-height: 1;
+		}
 
 		li {
 			float: none;
@@ -59,6 +72,6 @@
 		}
 	}
 	.nav .background {
-		justify-content: center;
+		justify-content: flex-start;
 	}
 }

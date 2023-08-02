@@ -19,7 +19,7 @@ export default function Productions({ data }) {
 	return (
 		<div className="productions" id="productions">
 			<FadeIn>
-				<h2>fashion <br /> coverage</h2>
+				<h2>Latest From <br /> Nine Day&apos;s Wonder Media</h2>
 			</FadeIn>
 			<hr />
 			<VideoModal open={open} setOpen={setOpen} subtitle={subtitle} title={title} img={img} year={year} month={month} slug={slug} />

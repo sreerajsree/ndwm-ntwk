@@ -98,6 +98,17 @@
 	font-size: 3.2rem;
 	padding-top: 30px;
 	line-height: 100px;
+	text-align: left;
+	letter-spacing: 2px;
+	.inline {
+		span {
+			text-transform: none;
+		}
+		.title-word {
+			font-size: 7rem;
+			text-transform: uppercase;
+		}
+	}
 }
 
 .text-animation {
@@ -134,10 +145,6 @@
 	color: aqua;
 }
 
-.text-italic {
-	font-size: 6rem;
-	letter-spacing: 10px;
-}
 
 .brand-logo {
 	width: 250px;
@@ -159,14 +166,16 @@
 	margin-top: 5rem;
 
 	p {
-		font-family:  $font-family-heading;
+		font-family:  $font-family-main;
 		opacity: 0;
-		font-size: $step-4;
+		font-size: $step-3;
 		min-height: 350px;
 		will-change: transform;
-		max-width: 50%;
+		max-width: 60%;
 		margin: auto;
 		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: 500;
 	}
 }
 
@@ -190,8 +199,10 @@
 		text-shadow: 0 10px 40px rgb(0 0 0 / 55%);
 		z-index: 1;
 		font-family: $font-family-heading;
-		font-weight: normal;
-		font-size: $step-7;
+		font-weight: 500;
+		font-size: $step-5;
+		text-transform: uppercase;
+		letter-spacing: 5px;
 	}
 }
 
@@ -355,12 +366,23 @@
 
 // Media queries
 @media screen and (max-width: 599px) {
+
 	.landing-content-title {
 		flex-direction: column;
-		font-size: $step-5;
 		margin: 10px 0;
 		padding-top: 0px;
 		line-height: 60px;
+		font-size: 2rem;
+		padding: 1rem;
+		.inline {
+			span {
+				text-transform: none;
+			}
+			.title-word {
+				font-size: 5rem;
+				text-transform: uppercase;
+			}
+		}
 	}
 
 	.text-italic {
@@ -375,6 +397,9 @@
 			max-width: 80%;
 			margin: auto
 		}
+	}
+	.images h3 {
+		font-size: 4rem;
 	}
 
 }

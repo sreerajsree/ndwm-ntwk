@@ -2,10 +2,9 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: $font-family-heading-bold;
+	font-family: $font-family-heading;
 	line-height: $line-height-sm;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 h5{
@@ -17,7 +16,7 @@ h5{
 @media screen and (max-width: 599px) {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-10; }
-	h3 { font-size: $step-6; }
+	h3 { font-size: $step-5; }
 	h4 { font-size: $step-5; }
 	h5 { font-size: $step-5; }
 	p	 { font-size: $step-1; }
@@ -26,7 +25,7 @@ h5{
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }
-	h3 { font-size: $step-6; }
+	h3 { font-size: $step-5; }
 	h4 { font-size: $step-5; }
 	h5 { font-size: $step-5; }
 	p	 { font-size: $step-1; }
