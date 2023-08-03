@@ -64,9 +64,9 @@
     a {
       text-decoration: underline;
       text-underline-offset: 6px;
-      text-decoration-color: aqua;
+      text-decoration-color: #853ce7;
       &:hover {
-		color: aqua;
+		color: #853ce7;
 		text-decoration-color: white;
       }
     }
@@ -76,7 +76,7 @@
 .leadership {
   text-decoration: underline;
   text-underline-offset: 10px;
-  text-decoration-color: aqua;
+  text-decoration-color: #853ce7;
   font-weight: normal;
   margin-bottom: 3rem;
 }
@@ -96,6 +96,9 @@
     text-align: center;
     align-items: center;
     min-height: unset;
+  }
+  .about-hero h1 span {
+    font-size: 4rem;
   }
   .intro-text {
     width: 90%;

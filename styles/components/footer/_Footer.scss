@@ -5,15 +5,7 @@
 }
 
 .footer .background {
-  background: #fd01e9;
-  background: linear-gradient(
-      197deg,
-      rgba(147, 19, 221, 0.6),
-      rgba(106, 8, 172, 0.65) 20%,
-      rgba(100, 26, 161, 0.6) 40%,
-      rgba(115, 11, 184, 0.35) 60%,
-      rgba(15, 16, 35, 0.23) 80%
-    );
+  background-image: linear-gradient(90deg,#20014b,#400095);
   height: 100%;
   left: 0;
   top: 0;
@@ -28,11 +20,11 @@
   color: $white;
 }
 
-.lets-meet {
+.foot-mid {
   font-size: $step-4;
 }
 
-.lets-meet img {
+.foot-mid img {
   max-width: 220px;
   animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
@@ -53,15 +45,7 @@ hr {
   height: 1px;
   margin: auto;
   &::after {
-    background: #fd01e9;
-    background: linear-gradient(
-      197deg,
-      rgba(124, 13, 189, 0.6),
-      rgba(123, 4, 128, 0.65) 20%,
-      rgba(97, 11, 83, 0.6) 40%,
-      rgba(53, 2, 53, 0.35) 60%,
-      rgba(15, 16, 35, 0.23) 80%
-    );
+    background-image: linear-gradient(90deg,#744ca8,#744ca8);
     bottom: 0;
     content: "";
     height: 2px;
@@ -168,11 +152,11 @@ hr {
     height: 22px;
   }
 
-  .lets-meet {
+  .foot-mid {
     font-size: 13vw;
   }
-  .lets-meet img {
-    width: 250px;
+  .foot-mid img {
+    width: 170px;
     animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
   }
 

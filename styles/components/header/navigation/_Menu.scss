@@ -33,15 +33,7 @@
 }
 
 .nav .background {
-	background: blueviolet;
-    background: linear-gradient(
-      197deg,
-      rgba(147, 19, 221, 0.6),
-      rgba(106, 8, 172, 0.65) 20%,
-      rgba(100, 26, 161, 0.6) 40%,
-      rgba(115, 11, 184, 0.35) 60%,
-      rgba(15, 16, 35, 0.23) 80%
-    );
+	background-image: linear-gradient(90deg,#20014b,#400095);
     height: 100%;
     position: absolute;
     width: 100%;

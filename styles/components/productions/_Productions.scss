@@ -59,6 +59,7 @@
 	opacity: 0.8;
 	letter-spacing: 1px;
 	font-size: 20px;
+	line-height: 1.2;
 }
 
 .view-more-btn {
@@ -101,13 +102,14 @@
 		width: 100%;
 		height: auto;
 	}
+
+	.productions h2 {
+		font-size:  4rem;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	.production-list-container {
 		grid-template-columns: 1fr 1fr;
 	}
-}
-
-@media screen and  (max-width: 899px) {
 }

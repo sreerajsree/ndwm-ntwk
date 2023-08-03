@@ -48,10 +48,10 @@
 .article_section .articles .article_text .article_heading {
     font-family: $font-family-heading;
     width: 100%;
-    font-size: 2rem;
+    font-size: $step-3;
     line-height: 1.6;
     padding-top: 2rem;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .article_section .articles .article_text .article_subheading {

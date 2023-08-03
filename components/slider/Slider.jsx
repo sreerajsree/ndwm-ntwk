@@ -32,9 +32,7 @@ const Slider = () => {
       <div className="wrapper">
         <div className="marquee">
             {TEXTS.map((item, key) => (
-              <p key={key} className="hover_underline">
-                {item}
-              </p>
+              <a key={key} className="hover_underline" href="https://thefashionenthusiast.uk/tags/${}"></a>
             ))}
         </div>
       </div>

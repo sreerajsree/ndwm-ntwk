@@ -72,7 +72,7 @@ const Home = ({ data }) => {
         <video
           className="video-full-screen"
           poster="/images/runway.webp"
-          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4hg"
+          src="https://res.cloudinary.com/tfe-official/video/upload/v1658775167/Barbara_Palvin___Giorgio_Armani__Acqua_di_Gioia_advertisement_AdobeExpress_ophnky.mp4"
           muted
           playsInline
           autoPlay

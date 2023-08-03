@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <footer className="footer full-bleed">
         <div className="background">
-          <div className="lets-meet">
+          <div className="foot-mid">
             <img
               src="/logo/ndwm-light.png"
               alt="Nine Day's Wonder Media Group Logo"

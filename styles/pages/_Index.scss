@@ -142,7 +142,7 @@
 }
 
 .ndwm {
-	color: aqua;
+	color: #853ce7;
 }
 
 
@@ -152,12 +152,12 @@
 
 .link {
 	text-decoration: underline;
-	text-underline-offset: 8px;
-	text-decoration-color: aqua;
+	text-underline-offset: 6px;
+	text-decoration-color: #853ce7;
 }
 
 .link:hover{
-	color: aqua;
+	color: #853ce7;
 }
 
 // Introduction
@@ -374,6 +374,7 @@
 		line-height: 60px;
 		font-size: 2rem;
 		padding: 1rem;
+		text-align: center;
 		.inline {
 			span {
 				text-transform: none;
