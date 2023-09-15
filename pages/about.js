@@ -55,7 +55,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              The Fashion Enthusiast
+              www.thefashionenthusiast.uk
             </a>{" "}
             &{" "}
             <a
@@ -63,7 +63,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              BORN-F
+              www.born-f.com
             </a>
             .
           </p>

@@ -121,11 +121,11 @@ const Home = ({ data }) => {
               rel="noreferrer"
               href="https://thefashionenthusiast.uk/"
             >
-              The Fashion Enthusiast
+              www.thefashionenthusiast.uk
             </a>&nbsp;
             &&nbsp;
             <a className="link" target="_blank" rel="noreferrer" href="">
-              BORN-F
+              www.born-f.com
             </a>
           </p>
         </TextReveal>

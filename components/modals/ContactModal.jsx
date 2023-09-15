@@ -95,14 +95,14 @@ export default function ContactModal() {
             </div>
 
             <div className="contact-info-section">
-              <div className="contact-info">
+              {/* <div className="contact-info">
                 <p className="contact-info-label">Phone:</p>
                 <p className="contact-info-detail">
                   <a target="_blank" href="#">
                     +91 xxxx xxxx xx
                   </a>
                 </p>
-              </div>
+              </div> */}
               <div className="contact-info">
                 <p className="contact-info-label">Email:</p>
                 <p className="contact-info-detail">
@@ -120,7 +120,7 @@ export default function ContactModal() {
                 <p className="contact-info-label">Address:</p>
                 <p className="contact-info-detail">
                   <a target="_blank" href="#">
-                    Bangalore, India
+                    New York, United States of America
                   </a>
                 </p>
               </div>
