@@ -34,7 +34,7 @@ export default function VideoModal({
             <h3 className="video-title">{title}</h3>
             {/* <VideoPlayer url={url} /> */}
             <img
-              src={`https://thefashionenthusiast.uk/storage/photos/${year}/${month}/${img}`}
+              src={`https://thefashionenthusiast.s3.amazonaws.com/${img}`}
               alt={title}
             />
             <p>{subtitle}</p>

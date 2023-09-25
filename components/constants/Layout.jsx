@@ -29,7 +29,7 @@ export default function Layout({ children }) {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jost:wght@500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       <Logo />

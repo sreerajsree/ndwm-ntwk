@@ -39,7 +39,7 @@ export default function Productions({ data }) {
 							setSlug(d?.slug)
 						}}
 					>
-						<img src={`https://thefashionenthusiast.uk/storage/photos/${d?.photo.year}/${d?.photo.month}/${d?.photo.path}`} alt={d?.title} />
+						<img src={`https://thefashionenthusiast.s3.amazonaws.com/${d?.photo.path}`} alt={d?.title} />
 						<span>{d?.title}</span>
 					</div>
 				))}
